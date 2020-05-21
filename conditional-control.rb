@@ -11,7 +11,7 @@ if city_count > 8 && country_count > 2
 end
 
 # complex conditionals
-puts "Making complex conditionals. Choose: add, subtract, divide, exponify, square root"
+puts "Making complex conditionals. Choose: add, subtract, multiply"
 command = gets.chomp
 if command  == "add" || command == "+"
     puts "We're adding numbers"
@@ -25,4 +25,18 @@ else
         end
     end
 end
+
+# simplifying really complex conditional
+puts "Simplified complex conditionals. Choose: divide, exponify, sqrt"
+commandtwo = gets.chomp
+if commandtwo == "divide" || commandtwo == "/"
+    puts "We're dividing numbers"
+elsif commandtwo == "exponify" || commandtwo == "**"
+    puts "We're exponitiating numbers"
+elsif commandtwo == "sqrt"
+    puts "We're finding the square root of a number"
+else 
+    puts "What do you want from me?"
+end
+
 
