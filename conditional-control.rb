@@ -28,15 +28,24 @@ end
 
 # simplifying really complex conditional
 puts "Simplified complex conditionals. Choose: divide, exponify, sqrt"
-commandtwo = gets.chomp
-if commandtwo == "divide" || commandtwo == "/"
+command = gets.chomp
+if command == "divide" || command == "/"
     puts "We're dividing numbers"
-elsif commandtwo == "exponify" || commandtwo == "**"
+elsif command == "exponify" || command == "**"
     puts "We're exponitiating numbers"
-elsif commandtwo == "sqrt"
+elsif command == "sqrt"
     puts "We're finding the square root of a number"
 else 
     puts "What do you want from me?"
 end
 
+#conditional loops using while
+puts "Again! Tell me to add"
+command = gets.chomp
+
+while command != "add" && command != "+"
+    puts "Please tell me to add (+)!"
+    command = gets.chomp
+end
+puts "OMG It's about time!"
 
